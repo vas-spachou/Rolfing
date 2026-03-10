@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Rolfing Practice</title>
+    <style>
+        .content-area {
+            display: none;
+            margin-top: 10px;
+        }
+        .expandable {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Rolfing Practice</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What is Rolfing?</h2>
+            <p class="expandable" onclick="toggleContent('rolfing-description')">Click to read more...</p>
+            <div id="rolfing-description" class="content-area">
+                <p>Rolfing is a form of bodywork that focuses on the manipulation of the body's connective tissues, primarily fascia, to improve postural alignment and movement efficiency. By addressing physical imbalances, Rolfing promotes overall well-being and reduces tension.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Benefits of Rolfing</h2>
+            <p class="expandable" onclick="toggleContent('rolfing-benefits')">Click to read more...</p>
+            <div id="rolfing-benefits" class="content-area">
+                <p>The benefits of Rolfing include:
+                <ul>
+                    <li>Improved posture</li>
+                    <li>Reduced pain and tension</li>
+                    <li>Enhanced mobility</li>
+                    <li>Increased body awareness</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Our Approach</h2>
+            <p class="expandable" onclick="toggleContent('our-approach')">Click to read more...</p>
+            <div id="our-approach" class="content-area">
+                <p>Our approach to Rolfing is personalized to meet the unique needs of each individual. We begin with an initial assessment to understand your specific goals and areas of concern, followed by tailored sessions that target those needs.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
